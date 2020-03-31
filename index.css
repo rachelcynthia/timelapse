@@ -1,0 +1,52 @@
+#banner_image{
+    padding-top: 75px;
+    padding-bottom: 50px;
+    text-align: center;
+    color:#f8f8f8;
+    background: url(bg1.jpg) no-repeat center center;
+    background-size: cover;
+}
+#banner_content{
+    position:relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0,0,0,0.7);
+    max-width:660px;
+}
+.heading{
+    background-color: brown;
+    color:white;
+    font-size: large;
+    font-family: Comic Sans MS,cursive, sans-serif;
+    font-style: italic;
+}
+.dark{
+    background-image:linear-gradient(black,grey);
+}
+.grey{
+    background-color: grey;
+    color:black;
+}
+#answer{
+    background-color: black;
+    font-size: large;
+    font-family:Apple Chancery, cursive;
+}
+hr{
+    border: 2px dotted black;
+    border-radius: 5px;
+}
+
+footer{
+    position:bottom;
+    padding:10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    width:100%;
+}
+#panel1{
+    padding-top: 75px;
+}
