@@ -65,7 +65,7 @@
         function left(year){
     
             var cur=new Date();
-            var last=new Date(parseInt(year),12,31)
+            var last=new Date(parseInt(year),11,31)
             var diff=(last.getTime()-cur.getTime())/(1000*60*60*24);
             var output=document.getElementById("output3.1");
             output.innerHTML=Math.round(diff)+" Days "+"<br>";
@@ -73,7 +73,7 @@
         }
         function done(year){
             var cur=new Date();
-            var first=new Date(parseInt(year),1,1);
+            var first=new Date(parseInt(year),0,1);
             var diff=(cur.getTime()-first.getTime())/(1000*60*60*24);
             var output=document.getElementById("output3.2");
             output.innerHTML=Math.round(diff)+" Days<br>";
