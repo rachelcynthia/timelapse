@@ -3,10 +3,28 @@
     padding-bottom: 50px;
     text-align: center;
     color:black;
-    background-color:rgba(0,0,0,0.7);
-    background: url("images.jpg") no-repeat center center;
-    background-size:cover ;
+    background-color: white;
 }
+body {margin:0;}
+nav{
+    background: #333;
+    height:30px;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#f2f2f2;
+    
+    font-size: 25px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
 input{
     color:black;
     background-color:white;
@@ -21,13 +39,7 @@ input{
     background-color: rgba(0,0,0,0.7);
     max-width:660px;
 }
-.heading{
-    background-color: brown;
-    color:white;
-    font-size: large;
-    font-family: Comic Sans MS,cursive, sans-serif;
-    font-style: italic;
-}
+
 .dark{
     background-image:linear-gradient(black,grey);
 }
@@ -46,14 +58,13 @@ hr{
     margin-left: 0;
 }
 #output2,#output1{
+    display:grid;
     border: 1px solid black;
+    grid-gap: 1em ;  
+    justify-items: center;  
+
 }
-footer{
-    position:bottom;
-    padding:10px 0;
-    color:black;
-    width:100%;
-}
+
 #panel1{
     padding-top: 75px;
 }
@@ -65,7 +76,7 @@ footer{
 {
     padding: 50 0;
     color:black;
-    width:50%;
+    width:49%;
     margin : 0;
     float : left ;
 }
@@ -74,20 +85,51 @@ footer{
 {
     padding: 50 0;
     color:black;
-    width:50%;
+    width:49%;
     margin : 0;
-    float : left ;
+    float : right ;
 }
 .container1{
     border: 1px solid black;
     border-collapse: collapse;
-    height:30%;
+    height:18%;
     text-align: center;
     padding: 70 0;
 }
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(1em,5);
+    justify-items: center;
+}
 .text{
+    display: grid;
     font-size:36px;
     color:darkorchid;
     font-family: Comic Sans MS,cursive, sans-serif;
     font-style: italic;
+}
+footer{
+    
+    display: grid;
+    position:bottom ;
+    padding:10px 0;
+    color:black;
+    width:100%;
+    position:static;
+}
+.help{
+    display: grid;
+    grid-gap: 1em ;
+    grid-template-columns: 50% 50%;
+}
+.heading{
+    display:grid;
+    background-color: brown;
+    color:white;
+    font-size: large;
+    font-family: Comic Sans MS,cursive, sans-serif;
+    font-style: italic;
+    border: tomato 1px solid;
+    grid-auto-rows: auto;
+
 }
