@@ -3,8 +3,9 @@ import DateTime from './components/DateTime';
 import ProgressBar from './components/ProgressBar';
 import Plus from './components/Other/Plus';
 import Equal from './components/Other/Equal';
-import Card from './components/Card'
-import './App.css';
+import Card from './components/Card';
+import DateInput from './components/DateInput'
+;import './App.css';
 
 class App extends React.Component{
   constructor(){
@@ -30,10 +31,9 @@ class App extends React.Component{
           <ProgressBar />
         </div>
         <div className="box">
-          <input 
-            type="date" 
-            name="date" 
-            value={this.state.date} 
+          <DateInput 
+            name={"date"}
+            value={this.state.date}
             onChange={this.handleChange}
           />
           <Plus />
@@ -52,16 +52,14 @@ class App extends React.Component{
         </div>
         {console.log(this.state.date)}
         <div className="box">
-          <input 
-            type="date"
-            name="dateFrom"
+        <DateInput 
+            name={"dateFrom"}
             value={this.state.dateFrom}
             onChange={this.handleChange}
           />
           <Plus />
-          <input 
-            type="date" 
-            name="dateTo"
+          <DateInput 
+            name={"dateTo"}
             value={this.state.dateTo}
             onChange={this.handleChange}
           />

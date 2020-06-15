@@ -2,7 +2,7 @@ import React from 'react';
 class Plus extends React.Component{
     render(){
         return(
-                <div style={{display: "inline"}}>&nbsp;Plus&nbsp;</div>
+                <div style={{display: "inline", margin: "10px"}}>Plus</div>
             
         );
     }
