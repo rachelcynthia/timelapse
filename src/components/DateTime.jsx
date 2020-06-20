@@ -37,7 +37,7 @@ class DateTime extends React.Component{
         paddingTop:"10px",
         paddingBottom: "10px",
         color:"white",
-        backgroundColor:"black"
+        backgroundColor:"black",
       };
       const day=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
       const month=["January", "February","March","April","May","June","July","August","September","October","November","December"];
@@ -45,10 +45,10 @@ class DateTime extends React.Component{
       return(
         <div style={thisStyle}>
           <div style={{textAlign:"left", position:"absolute",paddingLeft:"20px"}}>Timelapse</div>
-            {theDate}{this.next(theDate)};
-            {month[this.state.date.getMonth()]};
-            {day[this.state.date.getDay()]};
-            {this.state.date.toLocaleTimeString()};
+            {theDate}{this.next(theDate)}{' '}
+            {month[this.state.date.getMonth()]}{' '}
+            {day[this.state.date.getDay()]}{' '}
+            {this.state.date.toLocaleTimeString()}
         </div>
       );
     }
