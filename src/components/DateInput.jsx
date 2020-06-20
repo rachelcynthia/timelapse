@@ -3,7 +3,7 @@ class DateInput extends React.Component{
     render(){
         return(
             <>
-                <input type="date" name= {this.props.name} value={this.props.value} onChange={this.props.onChange}/>
+                <input type="date" name= {this.props.name} value={this.props.value} onChange={this.props.onChange} />
             </>
         );
     }
