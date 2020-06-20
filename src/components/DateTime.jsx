@@ -45,10 +45,10 @@ class DateTime extends React.Component{
       return(
         <div style={thisStyle}>
           <div style={{textAlign:"left", position:"absolute",paddingLeft:"20px"}}>Timelapse</div>
-            {theDate}{this.next(theDate)}&nbsp;&nbsp;
-            {month[this.state.date.getMonth()]}&nbsp;&nbsp;
-            {day[this.state.date.getDay()]}&nbsp;&nbsp;
-            {this.state.date.toLocaleTimeString()}&nbsp;&nbsp;
+            {theDate}{this.next(theDate)};
+            {month[this.state.date.getMonth()]};
+            {day[this.state.date.getDay()]};
+            {this.state.date.toLocaleTimeString()};
         </div>
       );
     }
