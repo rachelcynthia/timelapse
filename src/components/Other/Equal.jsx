@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 class Equal extends React.Component{
     render(){
         return(
-                <div style={{display:"inline", margin:"10px"}}>
+                <div className="equalPlus">
                     <FontAwesomeIcon icon={faEquals} />
                 </div>
         );

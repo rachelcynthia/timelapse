@@ -28,7 +28,7 @@ class App extends React.Component{
     return(
       <React.Fragment>
         <DateTime />
-        <div className="box">
+        <div className="progress">
           <ProgressBar />
         </div>
         <div className="box">
@@ -37,7 +37,9 @@ class App extends React.Component{
             value={this.state.date}
             onChange={this.handleChange}
           />
-          <Plus />
+          <Plus 
+            type={1}
+          />
           <input 
             type="number" 
             name="days"
@@ -58,14 +60,15 @@ class App extends React.Component{
             value={this.state.dateFrom}
             onChange={this.handleChange}
           />
-          <Plus />
+          <Plus 
+          type={0}
+          />
           <DateInput 
             name={"dateTo"}
             value={this.state.dateTo}
             onChange={this.handleChange}
           />
-          <Equal 
-          />
+          <Equal />
           <Card 
               type={2}
               dateFrom= {this.state.dateFrom}

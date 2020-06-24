@@ -12,12 +12,12 @@ class ProgressBar extends React.Component{
         const left_percent = Math.round((left/365) *100);
         const done_percent = Math.round((done/365)*100);
         return(
-            <div style={{paddingBottom:"50px"}}>
-                <div style={{width:"45%", float:"left"}}>
+            <div className="progressBar">
+                <div id="left">
                     Days Completed in the year : {done}<br/>
                     <Progress percent={done_percent}/>
                 </div>
-                <div style={{width:"45%", float:"right"}}>
+                <div id="right">
                     Days Left in the year: {left} <br/>
                     <Progress percent={left_percent}/>
                 </div>
