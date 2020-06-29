@@ -35,12 +35,12 @@ class DateTime extends React.Component{
       const month=["January", "February","March","April","May","June","July","August","September","October","November","December"];
       const theDate=this.state.date.getDate();
       return(
-        <div class="date">
+        <div className="date">
           <div id="dateTime">Timelapse</div>
             {theDate}{this.next(theDate)}{' '}
             {month[this.state.date.getMonth()]}{' '}
             {day[this.state.date.getDay()]}{' '}
-            {this.state.date.toLocaleTimeString()}
+            {this.state.date.toLocaleTimeString([],{timeStyle:"short"})}
         </div>
       );
     }

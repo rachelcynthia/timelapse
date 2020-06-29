@@ -5,7 +5,7 @@ class Equal extends React.Component{
     render(){
         return(
                 <div className="equalPlus">
-                    <FontAwesomeIcon icon={faEquals} />
+                    <FontAwesomeIcon icon={faEquals} size='2x'/>
                 </div>
         );
     }

@@ -9,14 +9,14 @@ class Plus extends React.Component{
         if(this.props.type===1){
         return(
                 <div className="equalPlus">
-                   <FontAwesomeIcon icon={faPlus} />
+                   <FontAwesomeIcon icon={faPlus} size='2x'/>
                 </div>
         );
         }
         else{
             return(
                 <div className="equalPlus">
-                <FontAwesomeIcon icon={faMinus} />
+                <FontAwesomeIcon icon={faMinus} size='2x'/>
              </div>
             );
         }

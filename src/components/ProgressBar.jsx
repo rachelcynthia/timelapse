@@ -1,6 +1,5 @@
 import React from 'react';
-import { Progress } from 'react-sweet-progress';
-import "react-sweet-progress/lib/style.css";
+import Progress from 'react-progressbar';
 class ProgressBar extends React.Component{
     render(){
         const date = new Date();
@@ -14,12 +13,22 @@ class ProgressBar extends React.Component{
         return(
             <div className="progressBar">
                 <div id="left">
-                    Days Completed in the year : {done}<br/>
-                    <Progress percent={done_percent}/>
+                    <div className="progText">Days Completed </div><br/>
+                    <div className="progBackground"><Progress 
+                        completed={done_percent}
+                        height="30px"
+                        />
+                    </div>
                 </div>
+                <div id="line"></div>
                 <div id="right">
-                    Days Left in the year: {left} <br/>
-                    <Progress percent={left_percent}/>
+                    <div className="progText">Days Remaining </div><br/>
+                    <div className="progBackground"
+                    style={{}}>
+                    <Progress 
+                    completed={left_percent}
+                    height="30px"
+                    /></div>
                 </div>
             </div>
         );
